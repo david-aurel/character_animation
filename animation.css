@@ -1,0 +1,170 @@
+/* animate motor wiggle */
+
+.motor {
+    transform-origin: 30% 50%;
+    animation: wiggle 80ms infinite;
+}
+
+@keyframes wiggle {
+    0%,
+    100% {
+        transform: rotate(-0.8deg);
+    }
+    50% {
+        transform: rotate(0.8deg);
+    }
+}
+
+/* animate propeller turning */
+
+.propeller {
+    animation: start-propeller 12s, propeller 200ms linear infinite;
+}
+
+@keyframes propeller {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(-1);
+    }
+}
+
+@keyframes start-propeller {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* animate boat wiggle */
+.man {
+    transform-origin: 60% 100%;
+    animation: boat-wiggle 370ms infinite;
+}
+
+@keyframes boat-wiggle {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0.4deg);
+    }
+}
+
+/* animate wave */
+
+.water {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+    animation: water 20s;
+}
+
+@keyframes water {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.wave {
+    width: 100%;
+    height: 100%;
+    background: url('/animation/wave.svg');
+    background-size: contain;
+    animation: wave 300ms linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 164%;
+    }
+}
+
+/* animate opening laptop */
+
+.laptop-top {
+    transform-origin: bottom right;
+    animation: open-laptop 2s;
+}
+
+@keyframes open-laptop {
+    0% {
+        transform: rotate(106deg) translate(-18%, 2%);
+    }
+    100% {
+    }
+}
+
+/* animate left arm opening the laptop */
+.l-arm {
+    transform-origin: 79% 13%;
+    animation: l-arm-opening-laptop 4s;
+}
+
+.l-low-arm {
+    transform-origin: 77% 46%;
+    animation: l-low-arm-opening-laptop 4s, typing 300ms 4s infinite;
+}
+
+@keyframes l-arm-opening-laptop {
+    0% {
+        transform: rotate(-21deg);
+    }
+    50% {
+        transform: rotate(54deg);
+    }
+    100% {
+    }
+}
+
+@keyframes l-low-arm-opening-laptop {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-33deg);
+    }
+    100% {
+    }
+}
+
+/* animate typing */
+.r-arm {
+    animation: typing 300ms 4150ms infinite;
+}
+@keyframes typing {
+    0%,
+    100% {
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+/* delay for boat animations  */
+
+.man {
+    animation-delay: 7s;
+}
+
+.motor {
+    animation-delay: 4.5s;
+}
