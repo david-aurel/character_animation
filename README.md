@@ -12,7 +12,7 @@ It all started with an illustration following an incredible tutorial by "Cricket
 
 ![img](./illustrator/man_v1_group.jpg)
 
-I decided to lose the fishing rod and add a computer as well as a motor. 
+It looked pretty cool already, but I decided to lose the fishing rod and add a computer as well as a motor. 
 
 ![img](./illustrator/man_v2.png)
 
@@ -26,7 +26,7 @@ Using CSS `@keyframes` and `transition: transform()` extensively, I figured out 
 
 
 
-Now the guy starts off by opening the laptop (firing up the server), the motor starts going (JavaScript) and then drives the boat (HTML Webpage) forward. At this point the animation loops and he'll go on forever. How cool is that?! 🤓🥳
+Now the guy starts off by opening the laptop, the motor starts going, driving the boat forward. At this point the animation loops and he'll go on forever. How cool is that?! 🤓🥳
 
 
 
