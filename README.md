@@ -1,6 +1,6 @@
-# SVG Character Animation with vanilla CSS
+# Bringing a cartoon character to life
 
-### Bringing a cartoon character to life
+### SVG Character Animation with vanilla CSS
 
 Live: [david-ahoy.surge.sh](https://david-ahoy.surge.sh)
 
