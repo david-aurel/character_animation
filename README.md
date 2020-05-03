@@ -14,7 +14,7 @@ It all started with an illustration following an incredible tutorial by "Cricket
 
 It looked pretty cool already, but I decided to lose the fishing rod and add a computer as well as a motor. 
 
-![img](./illustrator/man_v2.png)
+![img](./illustrator/man_v3.jpg)
 
 From there, I started building up the different exported layers of the illustration into an HTML file and pieced it back together with CSS. All vallues are percentages, so that the size can be dynamic.
 
@@ -30,7 +30,7 @@ Now the guy starts off by opening the laptop, the motor starts going, driving th
 
 
 
-![img](./illustrator/man_v2.gif)
+![img](./illustrator/man_v3_hq.gif)
 
 ---
 
