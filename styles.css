@@ -1,26 +1,39 @@
-/* animate motor wiggle */
-
-.motor {
-    transform-origin: 30% 50%;
-    animation: wiggle 80ms infinite;
+/* general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.wrapper {
+    margin: 10vh auto;
+    position: relative;
+    width: 70vw;
+    max-width: 90vh;
 }
 
+svg {
+    overflow: visible;
+}
+
+/* animate motor wiggle */
+#Engine_Top {
+    transform-origin: 75% 50%;
+    animation: wiggle 80ms infinite;
+}
 @keyframes wiggle {
     0%,
     100% {
-        transform: rotate(-0.8deg);
+        transform: rotate(-0.2deg);
     }
     50% {
-        transform: rotate(0.8deg);
+        transform: rotate(0.2deg);
     }
 }
 
 /* animate propeller turning */
-
-.propeller {
-    animation: start-propeller 12s, propeller 200ms linear infinite;
+#Propeller_Arms {
+    transform-origin: 13% 92%;
+    animation: start-propeller 10s linear, propeller 250ms linear infinite;
 }
-
 @keyframes propeller {
     0%,
     100% {
@@ -30,11 +43,8 @@
         transform: scale(-1);
     }
 }
-
 @keyframes start-propeller {
-    0% {
-        opacity: 0;
-    }
+    0%,
     50% {
         opacity: 0;
     }
@@ -44,31 +54,28 @@
 }
 
 /* animate boat wiggle */
-.man {
-    transform-origin: 60% 100%;
+#Man {
+    transform-origin: 30% 100%;
     animation: boat-wiggle 370ms infinite;
 }
-
 @keyframes boat-wiggle {
     0%,
     100% {
         transform: rotate(0deg);
     }
     50% {
-        transform: rotate(0.4deg);
+        transform: rotate(-0.7deg);
     }
 }
 
 /* animate wave */
-
 .water {
     position: absolute;
     width: 100%;
     height: 15%;
     bottom: 0;
-    animation: water 20s;
+    animation: water 11s;
 }
-
 @keyframes water {
     0% {
         transform: translateY(100%);
@@ -80,74 +87,69 @@
         transform: translateY(0);
     }
 }
-
 .wave {
     width: 100%;
     height: 100%;
-    background: url('/animation/wave.svg');
+    background: url('/wave.svg');
     background-size: contain;
     animation: wave 300ms linear infinite;
 }
-
 @keyframes wave {
     0% {
         background-position: 0% 0%;
     }
     100% {
-        background-position: 164%;
+        background-position: -308%;
     }
 }
 
 /* animate opening laptop */
-
-.laptop-top {
-    transform-origin: bottom right;
+#Laptop_top {
+    transform-origin: 81.3% 40.8%;
     animation: open-laptop 2s;
 }
-
 @keyframes open-laptop {
     0% {
-        transform: rotate(106deg) translate(-18%, 2%);
+        transform: rotate(-106deg);
     }
     100% {
     }
 }
 
 /* animate left arm opening the laptop */
-.l-arm {
-    transform-origin: 79% 13%;
+#L_arm {
+    transform-origin: 48% 22%;
     animation: l-arm-opening-laptop 4s;
 }
-
-.l-low-arm {
-    transform-origin: 77% 46%;
+#L_lower_arm {
+    transform-origin: 50% 42.5%;
     animation: l-low-arm-opening-laptop 4s, typing 300ms 4s infinite;
 }
-
 @keyframes l-arm-opening-laptop {
     0% {
-        transform: rotate(-21deg);
+        transform: rotate(29deg);
     }
     50% {
-        transform: rotate(54deg);
+        transform: rotate(-38deg);
     }
     100% {
     }
 }
-
 @keyframes l-low-arm-opening-laptop {
     0% {
-        transform: rotate(20deg);
+        transform: rotate(-23deg);
+    }
+    13% {
+        transform: rotate(-24deg);
     }
     50% {
-        transform: rotate(-33deg);
-    }
-    100% {
+        transform: rotate(15deg);
     }
 }
 
 /* animate typing */
-.r-arm {
+#R_arm {
+    transform-origin: 50% 50%;
     animation: typing 300ms 4150ms infinite;
 }
 @keyframes typing {
@@ -155,16 +157,16 @@
     100% {
     }
     50% {
-        transform: rotate(3deg);
+        transform: rotate(-3deg);
     }
 }
 
 /* delay for boat animations  */
 
-.man {
-    animation-delay: 7s;
+#Man {
+    animation-delay: 8s;
 }
 
-.motor {
-    animation-delay: 4.5s;
+#Engine_Top {
+    animation-delay: 5.5s;
 }
