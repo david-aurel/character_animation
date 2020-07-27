@@ -8,7 +8,7 @@ Live: [david-ahoy.surge.sh](https://david-ahoy.surge.sh)
 
 
 
-It all started with an illustration following an incredible tutorial by "Cricket Design" on Youtube: [https://youtu.be/8WQH5ksCpwc](https://youtu.be/8WQH5ksCpwc)
+It all started with an illustration following the techniques described in an incredible tutorial by "Cricket Design" on Youtube: [https://youtu.be/8WQH5ksCpwc](https://youtu.be/8WQH5ksCpwc)
 
 ![img](./illustrator/man_v1_group.jpg)
 
